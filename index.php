@@ -1,6 +1,10 @@
 <?php
-
-
+session_start();
+if (!isset($_SESSION['userid'])) {
+    header("location:login.php");
+    exit();
+}
+include("connect.php");
 ?>
     <!doctype html>
     <html lang="en">
