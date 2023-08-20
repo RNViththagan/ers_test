@@ -1,5 +1,7 @@
-<?php
 
+<?php
+echo "Hi";
+/*
 $hostname = "localhost";
 $username = 'root';
 $password = '';
@@ -10,6 +12,6 @@ $con = mysqli_connect($hostname, $username, $password, $dbname);
 if (!$con) {
     echo "db not";
     //die("Connection failed : " . mysqli_connect_error());
-}
+}*/
 
 ?>
