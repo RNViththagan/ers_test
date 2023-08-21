@@ -41,7 +41,7 @@ function login($table, $field)
                 if (password_verify($_POST['password'], $obj['password'])) {
                     session_start();
                     $_SESSION['userid'] = $_POST['username'];
-                    header("location:admin_select.php");
+                    header("Location: ./admin/index.php");
                     exit();
                 } else {
                     $GLOBALS['msg'][0] = "Password is wrong!";
