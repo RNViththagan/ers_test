@@ -1,5 +1,4 @@
 <?php
-ob_start();
 session_start();
 if(isset($_SESSION['userid'])){
     if(isset($_SESSION['role']))
@@ -42,8 +41,7 @@ function login($table, $field)
                 if (password_verify($_POST['password'], $obj['password'])) {
                     session_start();
                     $_SESSION['userid'] = $_POST['username'];
-                    $out = header("Location: ./admin/index.php");
-                    echo "$out";
+                    header("location:admin_select.php");
                     exit();
                 } else {
                     $GLOBALS['msg'][0] = "Password is wrong!";

@@ -5,6 +5,7 @@ if (!isset($_SESSION['userid'])) {
     exit();
 }
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,9 +16,8 @@ if (!isset($_SESSION['userid'])) {
     <title>Dashboard</title>
 </head>
 <body>
-    Welcome admin <br>
-    <a href="../logout.php">logout</a><br>
-    <a href="add_student.php">add student</a>
-
+Welcome master <br>
+<a href="../logout.php">logout</a> <br>
+<a href="add_admin.php">add Admin</a><br>
 </body>
 </html>
