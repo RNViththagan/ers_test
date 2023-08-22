@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'ERS-FOS'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BC502E72458A4C7CB52C7EBFEADFD3A6 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9C6BB567B9BE40508A77BDB5A0421A6B }}
           package: .
