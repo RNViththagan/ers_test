@@ -13,4 +13,8 @@ catch (PDOException $e) {
 $connectionInfo = array("UID" => "CloudSA5c33d5c2", "pwd" => "D38627I60J4BDCZ4$", "Database" => "ers-fos-db", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:ers-fos.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
+
+$con == $conn;
 ?>
+
+
